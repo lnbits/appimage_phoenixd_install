@@ -62,7 +62,7 @@ Create `Caddfile`
 ```
 sudo nano Caddyfile
 ```
-Add this to the Caddfile.
+Add this to the Caddyfile.
 ```
 <your url> {
     reverse_proxy 0.0.0.0:5000
@@ -74,7 +74,9 @@ Run caddy (it will use your Caddyfile).
 sudo caddy start
 ```
 
-Go to your url, create the Super-User, add your key to the LNbits funding source. 
+Go to your url, create the Super-User, add your key to the LNbits funding source, hit restart button.
+
+Phoenixd requires 20ksats sent in before outgoing payments are possible.
 
 Profit 🚀
 
