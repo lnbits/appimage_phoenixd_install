@@ -74,7 +74,9 @@ Run caddy (it will use your Caddyfile).
 sudo caddy start
 ```
 
-Go to your url 🚀
+Go to your url, create the Super-User, add your key to the LNbits funding source. 
+
+Profit 🚀
 
 ### Useful screen commands: 
 Create a screen: `screen -S <screen name>`
