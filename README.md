@@ -6,7 +6,7 @@ Create a screen for LNbits
 ```
 screen -S lnbits
 ```
-Featch the latest Appimage
+Fetch/install latest LNbits Appimage
 ```
 sudo apt-get install libfuse2
 wget $(curl -s https://api.github.com/repos/lnbits/lnbits/releases/latest | jq -r '.assets[] | select(.name | endswith(".AppImage")) | .browser_download_url') -O LNbits-latest.AppImage
