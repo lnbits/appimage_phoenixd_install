@@ -1,4 +1,4 @@
-# Fresh Lunanode VPS LNBits Install with Phoenixd and URL/HTPS
+# Fresh Lunanode VPS LNBits Install with Phoenixd with url/https
 
 See below for useful `screen` commands used in the tutorial.
 
