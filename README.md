@@ -1,5 +1,7 @@
 # Fresh VPS LNbits Install with Phoenixd and URL/HTTPS
-Creates a fresh LNbits install, with Phoenixd (self-custodial, super-easy "managed" node) and url/https (using Caddy) on a VPS. We use lunanode.com for the VPS.
+Creates a fresh LNbits install, with Phoenixd (self-custodial, super-easy "managed" node) and url/https (using Caddy) on a VPS. We use https://lunanode.com for the VPS.
+
+Head on over to https://lunanode.com and `Create a VM`. I always use 2nd to cheapest, but cheapest will do. Pick ` Ubuntu 24.04 64-bit (template)`.
 
 ### Installing LNbits
 Create a screen for LNbits
