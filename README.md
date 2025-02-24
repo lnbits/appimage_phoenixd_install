@@ -58,7 +58,7 @@ Copy the key.
 cat .phoenix/phoenix.conf
 ```
 ### Setup DNS
-Add an `A` record to your DNS
+Create DNS `A` record to your servers IP.
 ![image](https://github.com/user-attachments/assets/79360527-121c-4b19-b37d-626448eded71)
 
 ### Install Caddy
