@@ -44,7 +44,7 @@ ctrl + a + d
 ### Grab phoenixd key
 
 ```
-cat ./phoenix/phoenix.conf
+cat .phoenix/phoenix.conf
 ```
 Copy the key and put somewhere safe.
 
