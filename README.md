@@ -2,6 +2,13 @@
 Creates a fresh LNbits install, with Phoenixd (self-custodial, super-easy "managed" node) and url/https (using Caddy) on a VPS.
 
 Head on over to https://lunanode.com and `Create a VM`. I always use 2nd to cheapest, but cheapest will do. Pick ` Ubuntu 24.04 64-bit (template)`.
+### SSH into your VPS
+You usually need to wait 10mins while the VPS provisions, so get the VPS then put the kettle on.
+With your cuppa ssh into the VPS.
+```
+ssh ubuntu@<THE VPS IP>
+```
+Copy across the password from the VPS on lunanode.
 
 ### Installing LNbits
 Create a screen for LNbits
