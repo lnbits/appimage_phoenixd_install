@@ -26,8 +26,12 @@ screen -S phoenixd
 ```
 Copy the link of the latest `phoenix-0.4.2-linux-x64.zip` from https://github.com/ACINQ/phoenixd/releases
 ```
-sudo apt-get install unzip
 wget <THE LINK YOU COPIED>
+```
+Fetch and run Phoenixd.
+```
+sudo apt-get install unzip
+sudo apt-get install unzip
 unzip phoenix-0.4.2-linux-x64
 chmod +x phoenix-0.4.2-linux-x64/phoenixd
 ./phoenix-0.4.2-linux-x6/phoenixd
