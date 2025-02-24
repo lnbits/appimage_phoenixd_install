@@ -48,16 +48,18 @@ Once Phoenixd is running exit the screen
 ```
 ctrl + a + d
 ```
-### Grab phoenixd key
-
+### Copy seed/key
+Copy the seed.
+```
+cat .phoenix/seed.dat
+```
+Copy the key.
 ```
 cat .phoenix/phoenix.conf
 ```
-Copy the key and put somewhere safe.
-
 ### Setup DNS
 Add an `A` record to your DNS
-<pic>
+![image](https://github.com/user-attachments/assets/79360527-121c-4b19-b37d-626448eded71)
 
 ### Install Caddy
 https://caddyserver.com/docs/install#debian-ubuntu-raspbian
