@@ -26,8 +26,8 @@ Copy the link of the latest `phoenix-0.4.2-linux-x64.zip` from https://github.co
 ```
 sudo apt-get install unzip
 wget <THE LINK YOU COPIED>
-unzip
-chmod +x phoenix-0.4.2-linux-x6/phoenixd
+unzip phoenix-0.4.2-linux-x64
+chmod +x phoenix-0.4.2-linux-x64/phoenixd
 ./phoenix-0.4.2-linux-x6/phoenixd
 ```
 Exit the screen
