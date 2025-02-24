@@ -87,3 +87,4 @@ Profit 🚀
 * List all screens: `screen -ls`
 * Attach to a screen: `screen -r <screen name>`
 * Detach from screen: `ctrl + a + d`
+* If you end up outside of a locked screen: `screen -d <screen name>`
