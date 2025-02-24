@@ -69,13 +69,12 @@ Add this to the Caddfile.
 }
 ```
 `ctrl + s` to save, then `ctrl + x` to exit.
-Run caddy (it will use your Caddyfile.
+Run caddy (it will use your Caddyfile).
 ```
 sudo caddy start
 ```
 
 Go to your url 🚀
-
 
 ### Useful screen commands: 
 Create a screen: `screen -S <screen name>`
