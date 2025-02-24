@@ -30,7 +30,9 @@ unzip phoenix-0.4.2-linux-x64
 chmod +x phoenix-0.4.2-linux-x64/phoenixd
 ./phoenix-0.4.2-linux-x6/phoenixd
 ```
-Exit the screen
+Read the disclaimers and type `I understand` a bunch.
+
+Once Phoenixd is running exit the screen
 ```
 ctrl + a + d
 ```
