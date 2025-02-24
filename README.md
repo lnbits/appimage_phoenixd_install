@@ -1,6 +1,5 @@
 # Fresh Lunanode VPS LNBits Install with Phoenixd with url/https
-Creates a fresh LNbits install, with Phoenixd and url/https on a VPS. We use lunanode.com because.
-See below for useful `screen` commands used in the tutorial.
+Creates a fresh LNbits install, with Phoenixd (self-custodial "managed" node) and url/https (using Caddy) on a VPS. We use lunanode.com for the VPS.
 
 ### Installing LNbits
 Create a screen for LNbits
