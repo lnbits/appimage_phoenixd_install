@@ -81,7 +81,7 @@ Phoenixd requires 20ksats sent in before outgoing payments are possible.
 Profit 🚀
 
 ### Useful screen commands: 
-Create a screen: `screen -S <screen name>`
-List all screens: `screen -ls`
-Attach to a screen: `screen -r <screen name>`
-Detach from screen: `ctrl + a + d`
+* Create a screen: `screen -S <screen name>`
+* List all screens: `screen -ls`
+* Attach to a screen: `screen -r <screen name>`
+* Detach from screen: `ctrl + a + d`
