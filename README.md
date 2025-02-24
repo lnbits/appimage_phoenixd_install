@@ -31,9 +31,9 @@ wget <THE LINK YOU COPIED>
 Fetch and run Phoenixd.
 ```
 sudo apt-get install unzip
-unzip phoenix-0.4.2-linux-x64.zip
-chmod +x phoenix-0.4.2-linux-x64/phoenixd
-./phoenix-0.4.2-linux-x6/phoenixd
+unzip <phoenixd version you fetched>.zip
+chmod +x <phoenixd version you fetched>/phoenixd
+./<phoenixd version you fetched>/phoenixd
 ```
 Read the disclaimers and type `I understand` a bunch.
 
