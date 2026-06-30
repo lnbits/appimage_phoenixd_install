@@ -17,10 +17,10 @@ screen -S lnbits
 ```
 Fetch/install latest LNbits Appimage
 ```
-sudo apt-get install libfuse2
-wget $(curl -s https://api.github.com/repos/arcbtc/lnbits/releases/latest | jq -r '.assets[] | select(.name | endswith(".AppImage")) | .browser_download_url') -O LNbits-latest.AppImage
+sudo apt-get install jq libfuse2
+wget $(curl -s https://api.github.com/repos/lnbits/lnbits/releases/latest | jq -r '.assets[] | select(.name | endswith(".AppImage")) | .browser_download_url') -O LNbits-latest.AppImage
 chmod +x LNbits-latest.AppImage
-./LNbits-latest.AppImage --host 0.0.0.0 --port 5000
+LNBITS_ADMIN_UI=true HOST=0.0.0.0 PORT=5000 AUTH_HTTPS_ONLY=false ./LNbits-latest.AppImage
 ```
 Exit the screen
 ```
