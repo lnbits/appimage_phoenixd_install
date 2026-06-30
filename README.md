@@ -31,16 +31,23 @@ Create a screen for Phoenixd
 ```
 screen -S phoenixd
 ```
-Copy the link of the latest `phoenix-0.4.2-linux-x64.zip` from https://github.com/ACINQ/phoenixd/releases
+Install phoenixd
 ```
-wget <THE LINK YOU COPIED>
-```
-Fetch and run Phoenixd.
-```
-sudo apt-get install unzip
-unzip <phoenixd version you fetched>.zip
-chmod +x <phoenixd version you fetched>/phoenixd
-./<phoenixd version you fetched>/phoenixd
+sudo apt-get update
+sudo apt-get install -y curl unzip
+
+URL=$(curl -fsSL https://api.github.com/repos/ACINQ/phoenixd/releases/latest \
+  | grep browser_download_url \
+  | grep 'linux-x64.zip' \
+  | cut -d '"' -f4)
+
+FILE=$(basename "$URL")
+
+curl -L "$URL" -o "$FILE"
+unzip -q "$FILE"
+chmod +x "${FILE%.zip}/phoenixd"
+
+exec "./${FILE%.zip}/phoenixd"
 ```
 Read the disclaimers and type `I understand` a bunch.
 
@@ -48,14 +55,9 @@ Once Phoenixd is running exit the screen
 ```
 ctrl + a + d
 ```
-### Copy seed/key
-Copy the seed.
+### Copy api key
 ```
-cat .phoenix/seed.dat
-```
-Copy the key.
-```
-cat .phoenix/phoenix.conf
+grep '^http-password=' ~/.phoenix/phoenix.conf | cut -d= -f2-
 ```
 ### Setup DNS
 Create DNS `A` record to your servers IP.
@@ -90,7 +92,7 @@ Run caddy (it will use your Caddyfile).
 sudo caddy start
 ```
 
-Go to your url, create the Super-User, add your key to the LNbits funding source, hit restart button.
+Go to your url, create the Super-User, add api key to the LNbits funding source, hit restart button.
 
 Phoenixd requires 20ksats sent in before outgoing payments are possible.
 
